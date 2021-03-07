@@ -1,0 +1,24 @@
+.navbar{
+    flex-grow: 1;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-top: 130px;
+    background: #2f15ad;
+}
+
+.navbarItem{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbarItem a{
+    color: white !important;
+}
+
+hr{
+    width: 30px;
+    margin: 0px;
+    margin-top: 25px;
+}

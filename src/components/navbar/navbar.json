@@ -1,0 +1,50 @@
+[
+    {
+        "iconStyle": "iconMenu-profile",
+        "path": "/main/Dashboard",
+        "itemName": "Dashboard",
+        "haveLine": ""
+    },
+    {
+        "iconStyle": "iconMenu-profile",
+        "path": "/main/Activity",
+        "itemName": "Activity",
+        "haveLine": ""
+    },
+    {
+        "iconStyle": "iconMenu-profile",
+        "path": "/main/Timesheet",
+        "itemName": "Timesheet",
+        "haveLine": "line"
+    },
+    {
+        "iconStyle": "iconMenu-profile",
+        "path": "/main/To-Do",
+        "itemName": "To-Do",
+        "haveLine": ""
+    },
+    {
+        "iconStyle": "iconMenu-profile",
+        "path": "/main/Invoices",
+        "itemName": "Invoices",
+        "haveLine": ""
+    },
+    {
+        "iconStyle": "iconMenu-profile",
+        "path": "/main/Projects",
+        "itemName": "Projects",
+        "haveLine": "line"
+    },
+    {
+        "iconStyle": "iconMenu-profile",
+        "path": "/main/Help",
+        "itemName": "Help",
+        "haveLine": ""
+    },
+    {
+        "iconStyle": "iconMenu-profile",
+        "path": "/main/DownloadApp",
+        "itemName": "DownloadApp",
+        "haveLine": ""
+    }
+]
