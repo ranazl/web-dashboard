@@ -1,8 +1,12 @@
 import React from "react";
 import Navbar from "../navbar/navbar.json";
-import "../../styles/navbar.css"
+import "../../styles/navbar.css";
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const NavBody = () => {
+
+const NavBody = (iconStyle) => {
+
     return (
         <div className="navbar">
 
@@ -12,6 +16,8 @@ const NavBody = () => {
 
                     <div className="navbarItem" key={index}>
                         <a href="#">
+                            <i className={faCoffee}></i>
+                            {console.log("iconStyle", item.iconStyle)}
                             {item.itemName}
                         </a>
 

@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
 import "../../styles/report.css"
 
-class Report extends Component {
-
-    render() {
-        return (
-            <div className="report">
-                rrrrr
-            </div>
-        );
-    }
+const Report = () => {
+    return (
+        <div className="report">
+            rrrrr
+        </div>
+    )
 }
 
 export default Report;

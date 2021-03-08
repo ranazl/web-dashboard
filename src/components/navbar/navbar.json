@@ -1,48 +1,48 @@
 [
     {
-        "iconStyle": "iconMenu-profile",
+        "iconStyle": "phone",
         "path": "/main/Dashboard",
         "itemName": "Dashboard",
         "haveLine": ""
     },
     {
-        "iconStyle": "iconMenu-profile",
+        "iconStyle": "phone",
         "path": "/main/Activity",
         "itemName": "Activity",
         "haveLine": ""
     },
     {
-        "iconStyle": "iconMenu-profile",
+        "iconStyle": "phone",
         "path": "/main/Timesheet",
         "itemName": "Timesheet",
         "haveLine": "line"
     },
     {
-        "iconStyle": "iconMenu-profile",
+        "iconStyle": "phone",
         "path": "/main/To-Do",
         "itemName": "To-Do",
         "haveLine": ""
     },
     {
-        "iconStyle": "iconMenu-profile",
+        "iconStyle": "phone",
         "path": "/main/Invoices",
         "itemName": "Invoices",
         "haveLine": ""
     },
     {
-        "iconStyle": "iconMenu-profile",
+        "iconStyle": "phone",
         "path": "/main/Projects",
         "itemName": "Projects",
         "haveLine": "line"
     },
     {
-        "iconStyle": "iconMenu-profile",
+        "iconStyle": "phone",
         "path": "/main/Help",
         "itemName": "Help",
         "haveLine": ""
     },
     {
-        "iconStyle": "iconMenu-profile",
+        "iconStyle": "phone",
         "path": "/main/DownloadApp",
         "itemName": "DownloadApp",
         "haveLine": ""
