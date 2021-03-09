@@ -1,31 +1,27 @@
 import React from "react";
 import Navbar from "../navbar/navbar.json";
 import "../../styles/navbar.css";
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import * as icon from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-
-const NavBody = (iconStyle) => {
-
+const NavBody = () => {
     return (
-        <div className="navbar">
+        <div className='navbar'>
 
-            {
+            {Navbar.map((item, index) => {
+                const iconName = icon[item.iconStyle];
+                console.log("iconStyle", item.iconStyle, iconName);
 
-                Navbar.map((item, index) =>
-
-                    <div className="navbarItem" key={index}>
-                        <a href="#">
-                            <i className={faCoffee}></i>
-                            {console.log("iconStyle", item.iconStyle)}
+                return (
+                    <div className='navbarItem' key={index}>
+                        <a href={item.path}>
+                            <FontAwesomeIcon icon={iconName} className='navIcon' />
                             {item.itemName}
                         </a>
-
                         {item.haveLine === "line" && <hr />}
-
                     </div>
-
-                )}
+                );
+            })}
         </div>
     );
 };

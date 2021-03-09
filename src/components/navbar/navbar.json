@@ -1,49 +1,49 @@
 [
     {
-        "iconStyle": "phone",
-        "path": "/main/Dashboard",
+        "iconStyle": "faTachometerAlt",
+        "path": "/dashboard",
         "itemName": "Dashboard",
         "haveLine": ""
     },
     {
-        "iconStyle": "phone",
-        "path": "/main/Activity",
+        "iconStyle": "faChartLine",
+        "path": "/Activity",
         "itemName": "Activity",
         "haveLine": ""
     },
     {
-        "iconStyle": "phone",
-        "path": "/main/Timesheet",
+        "iconStyle": "faClock",
+        "path": "/Timesheet",
         "itemName": "Timesheet",
         "haveLine": "line"
     },
     {
-        "iconStyle": "phone",
-        "path": "/main/To-Do",
+        "iconStyle": "faClipboardCheck",
+        "path": "/ToDo",
         "itemName": "To-Do",
         "haveLine": ""
     },
     {
-        "iconStyle": "phone",
-        "path": "/main/Invoices",
+        "iconStyle": "faFileInvoice",
+        "path": "/Invoices",
         "itemName": "Invoices",
         "haveLine": ""
     },
     {
-        "iconStyle": "phone",
-        "path": "/main/Projects",
+        "iconStyle": "faFolder",
+        "path": "/Projects",
         "itemName": "Projects",
         "haveLine": "line"
     },
     {
-        "iconStyle": "phone",
-        "path": "/main/Help",
+        "iconStyle": "faQuestionCircle",
+        "path": "/Help",
         "itemName": "Help",
         "haveLine": ""
     },
     {
-        "iconStyle": "phone",
-        "path": "/main/DownloadApp",
+        "iconStyle": "faDownload",
+        "path": "/DownloadApp",
         "itemName": "DownloadApp",
         "haveLine": ""
     }
