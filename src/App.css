@@ -38,3 +38,18 @@
     transform: rotate(360deg);
   }
 }
+
+.parent{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+}
+
+.mainReport{
+  display: flex;
+  height: 100%;
+}
+
+.header{
+  height: 8%;
+}
