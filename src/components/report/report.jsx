@@ -4,7 +4,9 @@ import "../../styles/report.css"
 const Report = () => {
     return (
         <div className="report">
-            rrrrr
+            <text className="reportText">
+                Report
+            </text>
         </div>
     )
 }

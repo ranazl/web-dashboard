@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import Dashboard from './../navbar/navComponent/dashboard';
 import Activity from './../navbar/navComponent/activity';
 import Timesheet from './../navbar/navComponent/timeSheet';

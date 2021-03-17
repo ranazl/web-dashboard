@@ -1,4 +1,10 @@
 .report{
-    background: blue;
+    background: rgb(249 249 249);
     flex-grow: 2;
+    text-align: left;
+    padding: 20px 30px;
+}
+
+.reportText{
+    font-weight: bold;
 }

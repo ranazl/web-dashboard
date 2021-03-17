@@ -1,0 +1,20 @@
+.headerChild{
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 30px;
+}
+
+.projectsBtn{
+    color: #2e209e;
+    padding: 7px 15px;
+    font-weight: bold;
+    background: #e3e1f5;
+    border: unset;
+}
+
+.designBtn{
+    padding: 7px 20px;
+    font-weight: bold;
+    border: solid 1px #c8c7cc;
+}
