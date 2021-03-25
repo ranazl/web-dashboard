@@ -9,6 +9,7 @@ const Header = ({onAlert}) => {
         <div className="headerChild">
             <Button variant="secondary" className="designBtn">Design Task</Button>
             <Button variant="secondary" className="projectsBtn" onClick={() => onAlert("please try again")}>+ Add Projects</Button>
+           { console.log(onAlert(),"Alertttt")}
         </div>
     );
 }
