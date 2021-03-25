@@ -1,25 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react';
 
+const withAlert = (WrappedComponent) => (props) => {
+   
+       
+        const [message,setMessage]=useState('');
 
-const Alert = WrappedComponent => {
-
-    return class extends React.Component {
-        state = {
-            messages: [],
+        const onAlert = (error) => {
+            setMessage(error);
         }
 
-        alertMessage = {
-            error: message => this.addMessage(message, "error"),
-            success: message => this.addMessage(message, "success"),
-            info: message => this.addMessage(message, "info"),
-        }
-        render() {
+            return(
+                <>
+                    <WrappedComponent
+                        {...props}
+                        {...{onAlert}}
+                    />
+                    <>
+                        <text> {message} </text>
+                    </>
+                </>
+            )
+    
+};
 
-            return (
-                <WrappedComponent alertMessage={this.alertMessage} />
-            );
-        }
-    }
-}
-
-export default Alert;
+export default withAlert;

@@ -3,16 +3,12 @@ import "../../styles/header.css"
 import { Button } from 'react-bootstrap';
 import withAlert from "../../HOC/withAlert"
 
-const Header = ({ alertMessage }) => {
-
-    // const addAlert = () => {
-    //     alert("add Project")
-    // }
+const Header = ({onAlert}) => {
 
     return (
         <div className="headerChild">
             <Button variant="secondary" className="designBtn">Design Task</Button>
-            <Button variant="secondary" className="projectsBtn" onClick={() => alertMessage()}>+ Add Projects</Button>
+            <Button variant="secondary" className="projectsBtn" onClick={() => onAlert("please try again")}>+ Add Projects</Button>
         </div>
     );
 }

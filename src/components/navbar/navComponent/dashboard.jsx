@@ -2,7 +2,7 @@ import React from 'react';
 
 const Dashboard = () => {
     return (
-        <div style={{ color: "black" }}>
+        <div class="container" style={{ color: "black" }}>
             <table className="table table-striped">
                 <thead>
                     <tr>
