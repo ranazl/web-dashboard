@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {Alert} from 'react-bootstrap';
 
 const withAlert = (WrappedComponent) => (props) => {
    
@@ -16,7 +17,11 @@ const withAlert = (WrappedComponent) => (props) => {
                         {...{onAlert}}
                     />
                     <>
-                        <text> {message} </text>
+                    <Alert variant="success">
+                            <p>
+                                {message}
+                            </p>
+                    </Alert>
                     </>
                 </>
             )

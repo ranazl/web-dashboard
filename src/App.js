@@ -17,10 +17,10 @@ export default function App() {
           <div className="header">
             <Header />
           </div>
-          <span className="mainReport">
+          {/* <span className="mainReport">
             <Main />
             <Report />
-          </span>
+          </span> */}
         </span>
       </div>
     </Router>
