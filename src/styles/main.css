@@ -1,4 +1,4 @@
-.main {
-    background: red;
+.myMain {
+    background: rgb(255, 251, 251);
     flex-grow: 4;
 }

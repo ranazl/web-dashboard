@@ -6,14 +6,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const NavBody = () => {
     return (
-        <div className='navbar'>
+        <div className='myNavbar'>
 
             {Navbar.map((item, index) => {
                 const iconName = icon[item.iconStyle];
                 console.log("iconStyle", item.iconStyle, iconName);
 
                 return (
-                    <div className='navbarItem' key={index}>
+                    <div className='myNavbarItem' key={index}>
                         <a href={item.path}>
                             <FontAwesomeIcon icon={iconName} className='navIcon' />
                             {item.itemName}

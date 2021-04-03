@@ -1,4 +1,4 @@
-.navbar{
+.myNavbar{
     flex-grow: 0.5;
     text-align: left;
     padding-left: 20px;
@@ -7,13 +7,13 @@
     background: #2e209e;
 }
 
-.navbarItem{
+.myNavbarItem{
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
 }
 
-.navbarItem a{
+.myNavbarItem a{
     color: white !important;
 }
 

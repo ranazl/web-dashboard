@@ -8,11 +8,13 @@ import Invoices from './../navbar/navComponent/invoices';
 import Projects from './../navbar/navComponent/projects';
 import Help from './../navbar/navComponent/help';
 import DownloadApp from './../navbar/navComponent/downloadApp';
-import "../../styles/main.css"
+import "../../styles/main.css";
+import MainHeader from "./mainHeader"
 
 const Main = () => {
     return (
-        <div className="main">
+        <div className="myMain">
+            <MainHeader />
             <Switch>
                 <Route path="/dashboard">
                     <Dashboard />
