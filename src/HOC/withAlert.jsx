@@ -30,7 +30,7 @@ const withAlert = (WrappedComponent) => (props) => {
                     keyboard={false}
                 >
                     <Modal.Body>
-                        please try again
+                        Add your project
                     </Modal.Body>
                     <Modal.Footer>
                         <Button variant="secondary" onClick={handleClose}>

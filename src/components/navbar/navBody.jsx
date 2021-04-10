@@ -1,14 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../navbar/navbar.json";
 import "../../styles/navbar.css";
 import * as icon from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const NavBody = () => {
+    const [search, setSearch] = useState("");
+    const [navBarTemp, setNavbarTemp] = useState(Navbar);
+    const handleChange = (e) => {
+        setSearch(e.target.value);
+        const newList = Navbar.filter(
+            (item) => {
+                return item.itemName.toLowerCase().indexOf(
+                    search.toLowerCase()) !== -1;
+            });
+        setNavbarTemp(e.target.value === "" ? Navbar : newList);
+    };
+
     return (
         <div className='myNavbar'>
-
-            {Navbar.map((item, index) => {
+            <div className='search-container'>
+                <input type='text' value={search} onChange={handleChange} />
+            </div>
+            {navBarTemp.map((item, index) => {
                 const iconName = icon[item.iconStyle];
                 console.log("iconStyle", item.iconStyle, iconName);
 
