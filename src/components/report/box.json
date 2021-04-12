@@ -1,0 +1,14 @@
+[
+    {
+        "title": "WEEKLY ACTIVITY",
+        "iconStyle": "faChartLine"
+    },
+    {
+        "title": "WORKED THIS WEEK",
+        "iconStyle": "faListAlt"
+    },
+    {
+        "title": "ROUTINE",
+        "iconStyle": "faSync"
+    }
+]

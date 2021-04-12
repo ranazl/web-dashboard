@@ -52,5 +52,6 @@
 
 .header{
   height: 8%;
-  margin-bottom: 25px;
+  border-bottom: .1rem solid;
+  /* margin-bottom: 25px; */
 }

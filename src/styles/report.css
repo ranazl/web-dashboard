@@ -1,10 +1,32 @@
 .report{
-    background: rgb(249 249 249);
+    /* background: rgb(249 249 249); */
     flex-grow: 2;
     text-align: left;
-    padding: 20px 30px;
+    padding: 20px 40px;
+    border-left: .1rem solid;
 }
 
 .reportText{
     font-weight: bold;
+}
+
+.box{
+    width: 100%;
+    height: 5rem;
+    background: #2e209e;
+    border-radius: 8px;
+    color: white;
+    margin-top: 1.5rem;
+    display: flex;
+}
+.mapStyle{
+    display: flex;
+}
+
+.reportIcon{
+    margin: 15px 10px;
+}
+
+.titleStyle{
+    margin: 10px 10px;
 }
