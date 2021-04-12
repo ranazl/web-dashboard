@@ -24,7 +24,6 @@ const NavBody = () => {
             </div>
             {navBarTemp.map((item, index) => {
                 const iconName = icon[item.iconStyle];
-                console.log("iconStyle", item.iconStyle, iconName);
 
                 return (
                     <div className='myNavbarItem' key={index}>
