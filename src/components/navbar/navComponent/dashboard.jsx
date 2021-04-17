@@ -1,43 +1,65 @@
 import React from 'react';
-import * as ReactBootstrap from 'react-bootstrap'
+import * as ReactBootstrap from 'react-bootstrap';
+import DashboardData from './dashboard.json';
 import './dashboard.css'
 
 const Dashboard = () => {
 
-    const timeSheet = [
-        { Project: "Loading page Design", Data: "May21,2019", StartTime: "1:10pm", StopTime: "9:20pm", Duration: "8:10:37" },
-        { Project: "Loading page Design", Data: "May21,2019", StartTime: "1:10pm", StopTime: "9:20pm", Duration: "8:10:37" },
-        { Project: "Loading page Design", Data: "May21,2019", StartTime: "1:10pm", StopTime: "9:20pm", Duration: "8:10:37" },
-        { Project: "Loading page Design", Data: "May21,2019", StartTime: "1:10pm", StopTime: "9:20pm", Duration: "8:10:37" },
-        { Project: "Loading page Design", Data: "May21,2019", StartTime: "1:10pm", StopTime: "9:20pm", Duration: "8:10:37" }
-    ];
-
-    const renderTimeSheet = (obj, index) => {
+    const RenderTimeSheet = () => {
         return (
-            <tr key={index}>
-                <td>{obj.Project}</td>
-                <td>{obj.Data}</td>
-                <td>{obj.StartTime}</td>
-                <td>{obj.StopTime}</td>
-                <td>{obj.Duration}</td>
-            </tr>
+            <div>
+                {
+                    DashboardData.map((item, index) => {
+                        return (
+                            <tr key={index}>
+
+                                {Object.keys(item).map((tdKey, i) => {
+                                    return <td key={i}>{item[tdKey]}</td>
+                                })}
+
+                            </tr>
+                        )
+                    })
+                }
+            </div>
         )
     }
+
+    const header = () => [
+        {
+            id: "1",
+            value: "Project"
+        },
+        {
+            id: "2",
+            value: "Data"
+        },
+        {
+            id: "3",
+            value: "StartTime"
+        },
+        {
+            id: "4",
+            value: "StopTime"
+        },
+        {
+            id: "5",
+            value: "Duration"
+        }
+    ]
 
     return (
         <div className="tableDiv">
             <ReactBootstrap.Table className="table table-striped">
                 <thead>
                     <tr>
-                        <th scope="col">Project</th>
-                        <th scope="col">Data</th>
-                        <th scope="col">StartTime</th>
-                        <th scope="col">StopTime</th>
-                        <th scope="col">Duration</th>
+                        {header.map((item, id) => {
+                            return <th scope="col" key={id}>{item.value}</th>
+                        })}
                     </tr>
                 </thead>
                 <tbody>
-                    {timeSheet.map(renderTimeSheet)}
+                    <RenderTimeSheet />
                 </tbody>
             </ReactBootstrap.Table>
         </div>
