@@ -1,6 +1,6 @@
 import React from 'react';
-import { Switch, Route } from "react-router-dom";
-import Dashboard from './../navbar/navComponent/dashboard';
+import { Switch, Route } from 'react-router-dom';
+import Dashboard from './../navbar/navComponent/dashboard1';
 import Activity from './../navbar/navComponent/activity';
 import Timesheet from './../navbar/navComponent/timeSheet';
 import ToDo from './../navbar/navComponent/toDo';
@@ -8,41 +8,60 @@ import Invoices from './../navbar/navComponent/invoices';
 import Projects from './../navbar/navComponent/projects';
 import Help from './../navbar/navComponent/help';
 import DownloadApp from './../navbar/navComponent/downloadApp';
-import "../../styles/main.css";
-import MainHeader from "./mainHeader"
+import '../../styles/main.css';
+import MainHeader from './mainHeader';
 
 const Main = () => {
+    const myRoute = [
+        {
+            path: 'dashboard1',
+            component: <Dashboard />,
+        },
+        {
+            path: 'activity',
+            component: <Activity />,
+        },
+        {
+            path: 'timesheet',
+            component: <Timesheet />,
+        },
+        {
+            path: 'toDo',
+            component: <ToDo />,
+        },
+        {
+            path: 'invoices',
+            component: <Invoices />,
+        },
+        {
+            path: 'projects',
+            component: <Projects />,
+        },
+        {
+            path: 'help',
+            component: <Help />,
+        },
+        {
+            path: 'downloadApp',
+            component: <DownloadApp />,
+        },
+    ];
+
     return (
-        <div className="myMain">
+        <div className='myMain'>
             <MainHeader />
             <Switch>
-                <Route path="/dashboard">
-                    <Dashboard />
-                </Route>
-                <Route path="/activity">
-                    <Activity />
-                </Route>
-                <Route path="/timesheet">
-                    <Timesheet />
-                </Route>
-                <Route path="/toDo">
-                    <ToDo />
-                </Route>
-                <Route path="/invoices">
-                    <Invoices />
-                </Route>
-                <Route path="/projects">
-                    <Projects />
-                </Route>
-                <Route path="/help">
-                    <Help />
-                </Route>
-                <Route path="/downloadApp">
-                    <DownloadApp />
-                </Route>
+                {myRoute.map((item, id) => {
+                    const TagName = item.pageName;
+                    return (
+                        <Route key={id} path={item.path}>
+                            {item.component}
+                        </Route>
+                    );
+                })}
             </Switch>
         </div>
-    )
-}
+    );
+};
 
 export default Main;
