@@ -6,7 +6,7 @@ import "./dashboard.css";
 const Dashboard = () => {
     const RenderTimeSheet = () => {
         return (
-            <div>
+            <>
                 {DashboardData.map((item, index) => {
                     return (
                         <tr key={index}>
@@ -16,7 +16,7 @@ const Dashboard = () => {
                         </tr>
                     );
                 })}
-            </div>
+            </>
         );
     };
 
@@ -43,9 +43,9 @@ const Dashboard = () => {
         },
     ];
     return (
-        <div>
+        <div className="d-flex justify-content-center">
             <ReactBootstrap.Table className='table table-striped'>
-                <thead className="d-flex">
+                <thead>
                     <tr>
                         {header.map((item, id) => {
                             return (

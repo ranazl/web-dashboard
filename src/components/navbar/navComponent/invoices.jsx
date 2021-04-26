@@ -2,7 +2,7 @@ import React from 'react';
 
 const Invoices = () => {
     return (
-        <div style={{ color: "white" }}>
+        <div>
             Invoices
         </div>
     )

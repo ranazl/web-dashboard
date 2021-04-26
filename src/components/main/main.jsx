@@ -14,35 +14,35 @@ import MainHeader from './mainHeader';
 const Main = () => {
     const myRoute = [
         {
-            path: 'dashboard1',
+            path: '/dashboard1',
             component: <Dashboard />,
         },
         {
-            path: 'activity',
+            path: '/activity',
             component: <Activity />,
         },
         {
-            path: 'timesheet',
+            path: '/timesheet',
             component: <Timesheet />,
         },
         {
-            path: 'toDo',
+            path: '/toDo',
             component: <ToDo />,
         },
         {
-            path: 'invoices',
+            path: '/invoices',
             component: <Invoices />,
         },
         {
-            path: 'projects',
+            path: '/projects',
             component: <Projects />,
         },
         {
-            path: 'help',
+            path: '/help',
             component: <Help />,
         },
         {
-            path: 'downloadApp',
+            path: '/downloadApp',
             component: <DownloadApp />,
         },
     ];
@@ -52,7 +52,7 @@ const Main = () => {
             <MainHeader />
             <Switch>
                 {myRoute.map((item, id) => {
-                    const TagName = item.pageName;
+                    // const TagName = item.pageName;
                     return (
                         <Route key={id} path={item.path}>
                             {item.component}

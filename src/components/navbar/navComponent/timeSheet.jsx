@@ -2,7 +2,7 @@ import React from 'react';
 
 const TimeSheet = () => {
     return (
-        <div style={{ color: "white" }}>
+        <div>
             TimeSheet
         </div>
     )

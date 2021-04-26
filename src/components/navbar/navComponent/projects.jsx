@@ -2,7 +2,7 @@ import React from 'react';
 
 const Projects = () => {
     return (
-        <div style={{ color: "white" }}>
+        <div>
             Projects
         </div>
     )

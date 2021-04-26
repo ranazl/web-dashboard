@@ -2,7 +2,7 @@ import React from 'react';
 
 const DownloadApp = () => {
     return (
-        <div style={{ color: "white" }}>
+        <div style={{ color: "blue" }}>
             DownloadApp
         </div>
     )
